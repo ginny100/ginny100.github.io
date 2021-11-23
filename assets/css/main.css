@@ -1001,6 +1001,10 @@ body {
     display: block
 }
 
+.work--lockup .slider--item-hidden {
+    display: none;
+}
+
 .work--lockup .slider--item-center a {
     color: #fff
 }
