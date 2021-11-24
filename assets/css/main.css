@@ -946,6 +946,11 @@ body {
     text-align: center
 }
 
+.slider--item-image:hover {
+    background:#fff;
+    box-shadow: 0 0 100px rgba(212, 235, 212, 0.9);
+}
+
 .work--lockup .slider--item a {
     text-decoration: none;
     color: #858585
