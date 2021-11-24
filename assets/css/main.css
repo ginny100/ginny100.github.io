@@ -781,10 +781,42 @@ body {
     fill: #fff
 }
 
-.intro--banner img {
+.intro--banner .intro-image {
     position: absolute;
     bottom: 21px;
-    right: -12px
+    right: -12px;
+}
+
+.intro--banner .intro-image .intro-img {
+    position: absolute;
+    bottom: 37px;
+    right: 67px;
+    z-index: 2;
+}
+
+.intro--banner .intro-image .intro-circle {
+    position: absolute;
+    bottom: 70px;
+    right: 130px;
+    width: 231px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(212, 235, 212, 0.9);
+    /* box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px rgb(134, 210, 238), 0 0 140px 90px #0ff; */
+    z-index: 1;
+    animation: glow 1.5s infinite ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 60px 30px #fff;
+    }
+    50% {
+        box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px rgb(134, 210, 238);
+    }
+    100% {
+        box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px rgb(134, 210, 238), 0 0 140px 90px rgb(115, 240, 240);
+    }
 }
 
 .intro--options {
