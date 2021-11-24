@@ -1051,6 +1051,10 @@ body {
     cursor: pointer
 }
 
+.slider--prev:hover, .slider--next:hover {
+    box-shadow: 0 0 50px rgba(212, 235, 212, 0.9);
+}
+
 .work--lockup .slider--next svg,
 .work--lockup .slider--prev svg {
     width: 20px;
