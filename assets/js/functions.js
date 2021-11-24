@@ -175,83 +175,83 @@ $( document ).ready(function() {
 
   }
 
-  function workSlider() {
+  // function workSlider() {
 
-    $('.slider--prev, .slider--next').click(function() {
-      alert('clicked')
+  //   $('.slider--prev, .slider--next').click(function() {
+  //     alert('clicked')
 
-      $('.slider').animate({ opacity : 0 }, 400);
+  //     $('.slider').animate({ opacity : 0 }, 400);
 
-      // setTimeout(function(){
+  //     setTimeout(function(){
         
-      //   let direction = $(this).hasClass('slider--next') ? 1 : -1 // 1 => right, -1 => left
+  //       let direction = $(this).hasClass('slider--next') ? 1 : -1 // 1 => right, -1 => left
         
-      //   /* there are n elements: 0 -> 1 -> 2 -> ... -> n - 2 -> n - 1
-      //   - n = number of projects = $('.l-section.section .work .work--lockup .slider .slider--item')
-      //   */
+  //       /* there are n elements: 0 -> 1 -> 2 -> ... -> n - 2 -> n - 1
+  //       - n = number of projects = $('.l-section.section .work .work--lockup .slider .slider--item')
+  //       */
 
-      //   // value1 if some_conditions else value2 => Python
-      //   // some_conditions ? value1 : value2 => Javascript
+  //       // value1 if some_conditions else value2 => Python
+  //       // some_conditions ? value1 : value2 => Javascript
 
-      //   let allProjects = $('.l-section.section .work .work--lockup .slider .slider--item');
-      //   let numProjects = allProjects.length;
+  //       let allProjects = $('.l-section.section .work .work--lockup .slider .slider--item');
+  //       let numProjects = allProjects.length;
 
-      //   // finding the index of the current center element
-      //   for(let i = 0; i < numProjects; ++i){
-      //     // allProjects[i] = current project 
+  //       // finding the index of the current center element
+  //       for(let i = 0; i < numProjects; ++i){
+  //         // allProjects[i] = current project 
           
-      //     // if current project is the center
-      //     if(allProjects.eq(i).hasClass('slider--item-center')){
+  //         // if current project is the center
+  //         if(allProjects.eq(i).hasClass('slider--item-center')){
 
-      //       // Find old center, left, right
-      //       let oldCenterId = i;
-      //       let oldLeftId = i == 0 ? numProjects - 1 : i - 1;
-      //       let oldRightId = i == numProjects - 1 ? 0 : i + 1;
+  //           // Find old center, left, right
+  //           let oldCenterId = i;
+  //           let oldLeftId = i == 0 ? numProjects - 1 : i - 1;
+  //           let oldRightId = i == numProjects - 1 ? 0 : i + 1;
 
-      //       console.log(oldCenterId, oldLeftId, oldRightId);
+  //           console.log(oldCenterId, oldLeftId, oldRightId);
             
-      //       // Remove old center, left, right
-      //       allProjects.eq(oldCenterId).removeClass('slider--item-center');
-      //       allProjects.eq(oldLeftId).removeClass('slider--item-left');
-      //       allProjects.eq(oldRightId).removeClass('slider--item-right');
+  //           // Remove old center, left, right
+  //           allProjects.eq(oldCenterId).removeClass('slider--item-center');
+  //           allProjects.eq(oldLeftId).removeClass('slider--item-left');
+  //           allProjects.eq(oldRightId).removeClass('slider--item-right');
 
-      //       allProjects.addClass('slider--item-hidden');
+  //           allProjects.addClass('slider--item-hidden');
 
-      //       // Everything is now hidden
+  //           // Everything is now hidden
             
-      //       // Find new center
-      //       let newCenterId = oldCenterId + direction;
-      //       if (newCenterId == -1){ newCenterId = numProjects - 1; }
-      //       else if (newCenterId == numProjects) { newCenterId = 0; }
+  //           // Find new center
+  //           let newCenterId = oldCenterId + direction;
+  //           if (newCenterId == -1){ newCenterId = numProjects - 1; }
+  //           else if (newCenterId == numProjects) { newCenterId = 0; }
             
-      //       // Find new left
-      //       let newLeftId = oldLeftId + direction;
-      //       if (newLeftId == -1){ newLeftId = numProjects - 1; }
-      //       else if (newLeftId == numProjects) { newLeftId = 0; }
+  //           // Find new left
+  //           let newLeftId = oldLeftId + direction;
+  //           if (newLeftId == -1){ newLeftId = numProjects - 1; }
+  //           else if (newLeftId == numProjects) { newLeftId = 0; }
 
-      //       // Find new right
-      //       let newRightId = oldRightId + direction;
-      //       if (newRightId == -1){ newRightId = numProjects - 1; }
-      //       else if (newRightId == numProjects) { newRightId = 0; }
+  //           // Find new right
+  //           let newRightId = oldRightId + direction;
+  //           if (newRightId == -1){ newRightId = numProjects - 1; }
+  //           else if (newRightId == numProjects) { newRightId = 0; }
 
-      //       console.log(newCenterId, newLeftId, newRightId);
+  //           console.log(newCenterId, newLeftId, newRightId);
             
-      //       // Add new center, left, right
-      //       allProjects.eq(newCenterId).removeClass('slider--item-hidden').addClass('slider--item-center');
-      //       allProjects.eq(newLeftId).removeClass('slider--item-hidden').addClass('slider--item-left');
-      //       allProjects.eq(newRightId).removeClass('slider--item-hidden').addClass('slider--item-right');
+  //           // Add new center, left, right
+  //           allProjects.eq(newCenterId).removeClass('slider--item-hidden').addClass('slider--item-center');
+  //           allProjects.eq(newLeftId).removeClass('slider--item-hidden').addClass('slider--item-left');
+  //           allProjects.eq(newRightId).removeClass('slider--item-hidden').addClass('slider--item-right');
 
-      //       break;
-      //     }
-      //   }
+  //           break;
+  //         }
+  //       }
 
-      //   // A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them.
+  //       // A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them.
 
-      // }, 400);
-      $('.slider').animate({ opacity : 1 }, 400);
+  //     }, 400);
+  //     $('.slider').animate({ opacity : 1 }, 400);
 
-    });
-  }
+  //   });
+  // }
 
   function transitionLabels() {
 
@@ -274,7 +274,7 @@ $( document ).ready(function() {
   }
 
   outerNav();
-  workSlider();
+  // workSlider();
   transitionLabels();
 
 });
