@@ -1,4 +1,4 @@
-# [Ginny Dang's web portfolio](http://ginny100.github.io/)
+# Ginny Dang's web portfolio
 
 Hi there, my name is Ginny.
 Welcome to my web porfolio.
